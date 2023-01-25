@@ -15,6 +15,12 @@ class CreateEtudiantsTable extends Migration
     {
         Schema::create('etudiants', function (Blueprint $table) {
             $table->id();
+            $table->string('nom',200);
+            $table->string('addresse',200);
+            $table->string('phone', 100);
+            $table->string('email',255);
+            $table->string('date_naissance',50);
+            $table->integer('ville_id');
             $table->timestamps();
         });
     }
@@ -29,3 +35,8 @@ class CreateEtudiantsTable extends Migration
         Schema::dropIfExists('etudiants');
     }
 }
+
+
+
+
+
