@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('etudiant');
 });
 
-
-Route::get('etudiant', [EtudiantController::class,'index'])->name('etudiant.index'); //renaming the route so you can customize links
+            //URL    //Controller              //Method         //folder.file of view
+Route::get('index',  [EtudiantController::class,'index'])->name('etudiant.index'); //renaming the route so you can customize links
+Route::get('create', [EtudiantController::class,'create'])->name('etudiant.create'); 
+Route::get('edit/{etudiant}',   [EtudiantController::class,'edit'])->name('etudiant.edit'); 
+Route::put('edit/{etudiant}',   [EtudiantController::class,'update']); 
+Route::delete('edit/{etudiant}',   [EtudiantController::class,'destroy']); 
 
