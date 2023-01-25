@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\EtudiantController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('etudiant');
 });
+
+
+Route::get('etudiant', [EtudiantController::class,'index'])->name('etudiant.index'); //renaming the route so you can customize links
+
