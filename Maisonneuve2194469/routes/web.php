@@ -21,11 +21,14 @@ Route::get('/', function () {
 Route::get('index',  [EtudiantController::class,'index'])->name('etudiant.index'); //renaming the route so you can customize links
 Route::get('create', [EtudiantController::class,'create'])->name('etudiant.create'); 
 Route::post('create', [EtudiantController::class,'store'])->name('etudiant.store');
- 
+
+//affiche etudiant
 Route::get('show/{etudiant}',   [EtudiantController::class,'show'])->name('etudiant.show');
 
+//affiche formulaire
 Route::get('edit/{etudiant}',   [EtudiantController::class,'edit'])->name('etudiant.edit'); 
+//submit button
 Route::put('edit/{etudiant}',   [EtudiantController::class,'update']); 
+
 Route::delete('edit/{etudiant}',   [EtudiantController::class,'destroy']); 
 
-// Route::delete('blog-edit/{blogPost}',[BlogPostController::class,'destroy']);
