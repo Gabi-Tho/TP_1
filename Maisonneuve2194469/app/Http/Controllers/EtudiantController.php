@@ -26,23 +26,67 @@ class EtudiantController extends Controller
     }
 
     //button functionality
-    public function update(Etudiant $etudiant){
+    public function update(Request $request, Etudiant $etudiant){
 
-        return view('etudiant.edit', ['etudiant'=>$etudiant]);
+        $etudiant->update([
+
+            'nom'  => $request->nom,
+            'addresse' => $request->addresse,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'date_naissance' => $request->date_naissance,
+            'ville_id' => $request->ville_id
+
+        ]);
+
+        return redirect(route('etudiant.show',$etudiant->id));
         
     }
+
+
+    public function show(Etudiant $etudiant){
+        
+        $villes = Ville::all();
+        return view('etudiant.show', ['etudiant'=>$etudiant, 'villes'=>$villes]);
+        
+    }
+
+
     //the link to the route
     public function edit(Etudiant $etudiant){
-
-        return view('etudiant.edit', ['etudiant'=>$etudiant]);
         
+        $villes = Ville::all();
+        return view('etudiant.edit', ['etudiant'=>$etudiant, 'villes'=>$villes]);
     }
 
     public function destroy(Etudiant $etudiant){
 
-        return view('etudiant.edit', ['etudiant'=>$etudiant]);
+        $etudiant->delete();
+        $etudiants = Etudiant::all();
+        return redirect(route('etudiant.index', ['etudiants'=>$etudiants]));
         
     }
+
+    public function store(Request $request)
+    {
+        $newEtudiant = Etudiant::create([
+
+            'nom'  => $request->nom,
+            'addresse' => $request->addresse,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'date_naissance' => $request->date_naissance,
+            'ville_id' => $request->ville_id,
+
+
+        ]);
+
+        // return $newBlogPost->id;
+        return redirect(route('etudiant.show',$newEtudiant->id));
+    }
+
+
+
 
     
 

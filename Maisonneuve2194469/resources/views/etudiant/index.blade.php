@@ -15,7 +15,7 @@
         </tr>
         @foreach($etudiants as $etudiant)
         <tr>
-            <td><a href="{{ route('etudiant.edit', $etudiant->id) }}"> {{ $etudiant->nom }}</a></td>
+            <td><a href="{{ route('etudiant.show', $etudiant->id) }}"> {{ $etudiant->nom }}</a></td>
             <td>{{ $etudiant->etudiantHasVille->ville }}</td>
         </tr>
         @endforeach
