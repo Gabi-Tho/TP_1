@@ -9,6 +9,21 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+<!-- <div class="jumbotron bg-primary">
+    <img class="card-img" src="/css/img/background_8.jpg" alt="Card image">
+  <h1 class="display-4">Maisonneuve de Gabi</h1>
+  <hr class="my-4">
+</div> -->
+
+
+<div class="jumbotron">
+  <div>  
+    <img src="{{ asset('css/img/background_3.jpg')}}">
+  </div>
+
+  <h1 class="display-4">Maisonneuve de Gabi</h1>
+  <p class="lead">Un Projet encroyable de Laravel</p>
+</div>
     @yield('content')
 </body>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>

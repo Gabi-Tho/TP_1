@@ -7,16 +7,17 @@
   <div class="row">
     <div class=" col-12 text-center mt-2">
     <h1 class="display-1">Show Etudiant</h1>
+    <hr>
     </div>
   </div>
 </div>
 
-<hr>
+
 
 <div class="container-md mt-10">
 
 
-<table class="table table-dark">
+<table class="table table-light">
   <tbody>
     <tr>
       <td> Nom</td>

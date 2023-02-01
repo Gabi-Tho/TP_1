@@ -1874,6 +1874,7 @@ progress {
 }
 .table > thead {
   vertical-align: bottom;
+  background: rgba(255, 255, 255, 0.448);
 }
 
 .table-group-divider {
@@ -2022,13 +2023,13 @@ progress {
 
 .table-dark {
   --bs-table-color: #fff;
-  --bs-table-bg: #212529;
-  --bs-table-border-color: #373b3e;
-  --bs-table-striped-bg: #2c3034;
+  --bs-table-bg: #212529e2;
+  --bs-table-border-color: #373b3ee6;
+  --bs-table-striped-bg: #2c3034eb;
   --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #373b3e;
+  --bs-table-active-bg: #373b3ee0;
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #323539;
+  --bs-table-hover-bg: #323539d7;
   --bs-table-hover-color: #fff;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -2940,8 +2941,9 @@ textarea.form-control-lg {
 }
 
 .btn {
-  --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 0.375rem;
+  /* --bs-btn-padding-x: 0.75rem; */
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-padding-y: 1rem;
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
@@ -2950,7 +2952,7 @@ textarea.form-control-lg {
   --bs-btn-bg: transparent;
   --bs-btn-border-width: var(--bs-border-width);
   --bs-btn-border-color: transparent;
-  --bs-btn-border-radius: 0.375rem;
+  --bs-btn-border-radius: 2rem;
   --bs-btn-hover-border-color: transparent;
   --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   --bs-btn-disabled-opacity: 0.65;
@@ -3052,6 +3054,7 @@ textarea.form-control-lg {
 }
 
 .btn-success {
+
   --bs-btn-color: #fff;
   --bs-btn-bg: #b87dcc;
   --bs-btn-border-color: #9c00c4;
@@ -3105,8 +3108,8 @@ textarea.form-control-lg {
 
 .btn-danger {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #dc3545;
-  --bs-btn-border-color: #dc3545;
+  --bs-btn-bg: #b87dcc;
+  --bs-btn-border-color: #9c00c4;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #bb2d3b;
   --bs-btn-hover-border-color: #b02a37;
@@ -8555,7 +8558,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: white !important;
 }
 
 .bg-secondary {
