@@ -14,7 +14,7 @@
 <body>
 
 <div class="card bg-dark text-white">
-  <img src="{{ asset('css/img/background_3.jpg')}}"> 
+  <img class="img-fluid" src="{{ asset('css/img/background_3.jpg')}}"> 
   <div class="card-img-overlay">
     <h1 class="display-1 ">Maisonneuve</h1>
     <p class="lead">Un Projet encroyable de Laravel</p>
