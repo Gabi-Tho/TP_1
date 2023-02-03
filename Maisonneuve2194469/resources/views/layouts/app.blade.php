@@ -12,17 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"> 
 </head>
 <body>
-<!-- <div class="jumbotron bg-primary">
-    <img class="card-img" src="/css/img/background_8.jpg" alt="Card image">
-  <h1 class="display-4">Maisonneuve de Gabi</h1>
-  <hr class="my-4">
-</div> -->
 
 <div class="card bg-dark text-white">
   <img src="{{ asset('css/img/background_3.jpg')}}"> 
   <div class="card-img-overlay">
     <h1 class="display-1 ">Maisonneuve</h1>
     <p class="lead">Un Projet encroyable de Laravel</p>
+    <p class="lead">https://github.com/Gabi-Tho/TP_1</p>
     <nav class="position-absolute bottom-0 end-0 p-5 display-6">
       <a  class="text-decoration-none btn btn-light" href="{{ route('etudiant.index') }}">HOME</a>
     </nav>
