@@ -196,13 +196,10 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  /* background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
-  background: rgb(39,214,48);
-  background: -moz-linear-gradient(261deg, rgba(39,214,48,0.48503151260504207) 0%, rgba(217,81,193,0.47942927170868344) 1%, rgba(77,71,205,0.4458158263305322) 100%);
-  background: -webkit-linear-gradient(261deg, rgba(39,214,48,0.48503151260504207) 0%, rgba(217,81,193,0.47942927170868344) 1%, rgba(77,71,205,0.4458158263305322) 100%);
-  background: linear-gradient(261deg, rgba(39,214,48,0.48503151260504207) 0%, rgba(217,81,193,0.47942927170868344) 1%, rgba(77,71,205,0.4458158263305322) 100%);
+  background: rgb(14, 15, 14);
+  background: -moz-linear-gradient(261deg, rgba(184, 182, 182, 0.485) 0%, rgba(37, 37, 37, 0.479) 1%, rgba(145, 145, 145, 0.446) 100%);
+  background: -webkit-linear-gradient(261deg, rgba(39,214,48,0.48503151260504207) 0%, rgba(165, 164, 165, 0.479) 1%, rgba(28, 28, 28, 0.446) 100%);
+
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27d630",endColorstr="#4d47cd",GradientType=1);
 }
 
@@ -604,6 +601,8 @@ progress {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
   line-height: 1.2;
+  font-family: 'Creepster', cursive;
+  
 }
 @media (min-width: 1200px) {
   .display-1 {
@@ -3056,8 +3055,8 @@ textarea.form-control-lg {
 .btn-success {
 
   --bs-btn-color: #fff;
-  --bs-btn-bg: #b87dcc;
-  --bs-btn-border-color: #9c00c4;
+  --bs-btn-bg: #000000;
+  --bs-btn-border-color: #00b734;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #157347;
   --bs-btn-hover-border-color: #146c43;
@@ -3108,8 +3107,8 @@ textarea.form-control-lg {
 
 .btn-danger {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #b87dcc;
-  --bs-btn-border-color: #9c00c4;
+  --bs-btn-bg: #000000;
+  --bs-btn-border-color: #c40000;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #bb2d3b;
   --bs-btn-hover-border-color: #b02a37;

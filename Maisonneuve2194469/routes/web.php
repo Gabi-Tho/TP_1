@@ -19,6 +19,8 @@ Route::get('/', function () {
 
             //URL    //Controller              //Method         //folder.file of view
 Route::get('index',  [EtudiantController::class,'index'])->name('etudiant.index'); //renaming the route so you can customize links
+Route::get('',  [EtudiantController::class,'index']);
+Route::get('/',  [EtudiantController::class,'index']);
 Route::get('create', [EtudiantController::class,'create'])->name('etudiant.create'); 
 Route::post('create', [EtudiantController::class,'store'])->name('etudiant.store');
 

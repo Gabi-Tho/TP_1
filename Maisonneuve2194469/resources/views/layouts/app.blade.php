@@ -7,6 +7,9 @@
     <title> TP1 Gabi</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"> 
 </head>
 <body>
 <!-- <div class="jumbotron bg-primary">
@@ -15,16 +18,28 @@
   <hr class="my-4">
 </div> -->
 
-
-<div class="jumbotron">
-  <div>  
-    <img src="{{ asset('css/img/background_3.jpg')}}">
+<div class="card bg-dark text-white">
+  <img src="{{ asset('css/img/background_3.jpg')}}"> 
+  <div class="card-img-overlay">
+    <h1 class="display-1 ">Maisonneuve</h1>
+    <p class="lead">Un Projet encroyable de Laravel</p>
+    <nav class="position-absolute bottom-0 end-0 p-5 display-6">
+      <a  class="text-decoration-none btn btn-light" href="{{ route('etudiant.index') }}">HOME</a>
+    </nav>
   </div>
-
-  <h1 class="display-4">Maisonneuve de Gabi</h1>
-  <p class="lead">Un Projet encroyable de Laravel</p>
 </div>
+
     @yield('content')
+
+    <footer class="text-center text-lg-start text-white">
+
+    <div class="text-center p-3 primary">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Gabriela</a>
+    </div>
+
+  </footer>
+
 </body>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 </html>
