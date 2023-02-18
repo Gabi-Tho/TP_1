@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\EtudiantController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//====================================== Etudiant Controller =====================================\\
+
 Route::get('/', function () {
     return view('etudiant');
 });
@@ -24,6 +28,7 @@ Route::get('/',  [EtudiantController::class,'index']);
 Route::get('create', [EtudiantController::class,'create'])->name('etudiant.create'); 
 Route::post('create', [EtudiantController::class,'store'])->name('etudiant.store');
 
+
 //affiche etudiant
 Route::get('show/{etudiant}',   [EtudiantController::class,'show'])->name('etudiant.show');
 
@@ -34,3 +39,9 @@ Route::put('edit/{etudiant}',   [EtudiantController::class,'update']);
 
 Route::delete('edit/{etudiant}',   [EtudiantController::class,'destroy']); 
 
+
+
+
+//====================================== UserController =====================================\\
+
+Route::get('login', [UserController::class,'index'])->name('user.index');

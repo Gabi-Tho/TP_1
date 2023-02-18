@@ -21,6 +21,7 @@
     <p class="lead">https://github.com/Gabi-Tho/TP_1</p>
     <nav class="position-absolute bottom-0 end-0 p-5 display-6">
       <a  class="text-decoration-none btn btn-light" href="{{ route('etudiant.index') }}">HOME</a>
+      <a  class="text-decoration-none btn btn-light" href="{{ route('user.index') }}">LOGIN</a>
     </nav>
   </div>
 </div>

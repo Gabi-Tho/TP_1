@@ -30,8 +30,9 @@
             </tr>
         @endforeach
         </tbody>
-
+        
     </table>
+    {{$etudiants}}
 
 </div>
 

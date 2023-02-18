@@ -14,7 +14,8 @@ class EtudiantController extends Controller
     public function index()
     {
 
-        $etudiants = Etudiant::all();
+        // $etudiants = Etudiant::all();
+        $etudiants = Etudiant::select()->paginate(10);
         return view('etudiant.index', ['etudiants'=>$etudiants]);
         
     }
